@@ -193,6 +193,10 @@ button:active,
   text-align: center;
 }
 
+.social-media a {
+  text-decoration: none;
+}
+
 .social-media__item {
   height: 40px;
 }
