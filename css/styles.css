@@ -35,17 +35,13 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: var(--font-regular);
   font-size: var(--body-copy-regular);
-
-  /* Sets the font size to 16px */
   line-height: 1.6;
-
-  /* Sets the line-height to 1.6 */
   color: black;
   padding: 20px;
 }
 
 h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: var(--headline-bold);
   line-height: 1;
   color: var(--highlight-pink);
@@ -325,4 +321,8 @@ button:active,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+#contact_form {
+  padding-left: 30px;
 }
