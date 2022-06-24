@@ -35,7 +35,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: var(--font-regular);
   font-size: var(--body-copy-regular);
-  line-height: 1.6;
+  line-height: 1.5;
   color: black;
   padding: 20px;
 }
@@ -45,6 +45,7 @@ h1 {
   font-weight: var(--headline-bold);
   line-height: 1;
   color: var(--highlight-pink);
+  padding-top: 20px;
 }
 
 h2 {
@@ -52,6 +53,7 @@ h2 {
   font-weight: var(--font-bold);
   line-height: 1;
   color: var(--dark-blue);
+  padding-top: 10px;
 }
 
 h3 {
@@ -246,6 +248,16 @@ button:active,
 }
 
 @media all and (max-width: 500px) {
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+
   /* home page changes - profile pic centered  */
   .profile__portrait {
     padding: 20px;
@@ -276,13 +288,6 @@ button:active,
     grid-row: auto / auto;
   }
 
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
 }
 
 @keyframes color-change {
