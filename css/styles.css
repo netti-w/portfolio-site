@@ -95,8 +95,7 @@ button {
 
   /* resets the border */
   border: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px;
   margin-bottom: 20px;
   display: inline-block;
 
@@ -314,7 +313,7 @@ button:active,
   from {
     transform: translate(446px, 48px);
   }
-  
+
   to {
     transform: translate(100px, 48px);
   }
