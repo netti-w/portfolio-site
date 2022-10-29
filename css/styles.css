@@ -226,12 +226,10 @@ button:active,
   width: 100%;
   text-align: center;
   margin: auto;
+  padding-bottom: 10px;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-}
-
-.project-list__item__screenshot {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -276,12 +274,10 @@ button:active,
     width: 100%;
     text-align: center;
     margin: auto;
+    padding-bottom: 10px;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
-  }
-
-  .project-list__item__screenshot {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
