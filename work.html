@@ -19,24 +19,27 @@
 
 <body>
   <!-- Header including the logo and the main navigation -->
-  <header class="page-header">
-    <a href="index.html"><img src="img/logo_netti-worms_v1.png" alt="logo Netti Worms" class="page-header__logo"></a>
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="tab" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="tab" class="navigation-list__item">About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item--active">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="tab" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img class="nav-logo" src="img/logo_netti-worms_v1.png" alt="logo Netti Worms"
+            class="page-header__logo"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </header>
   <!-- Main content -->
   <section>
@@ -49,10 +52,15 @@
           <img src="img/screenshot_pokedex.png" class="project-list__item__screenshot" alt="screenshot of the app">
         </a>
         <p>
-          Within this project, I built a small web application with HTML, CSS and JavaScript that loads data from an
+          Within this project, I built a small web application with HTML and JavaScript that loads data from an
           external API and enables the viewing of data points in detail.
+          <br><br>
+          Technolgies used in this project include: HTML5, Polyfill, jQuery, Bootstrap and ESlint. See Github link for
+          more details.
         </p>
-        <a href="https://github.com/netti-w/simple-js-app" target="_blank">See project on GitHub</a>
+        <a href="https://github.com/netti-w/simple-js-app" target="_blank">View project on GitHub</a><br><br>
+        <a href="https://netti-w.github.io/simple-js-app/" target="_blank">See a live
+          version</a>
       </div>
       <div class="project-list__item">
         <h2>myFlix App (server-side)</h2>
@@ -61,20 +69,28 @@
             alt="screenshot of the app">
         </a>
         <p>
-          Within this project, I created a REST API for an application called "myFlix" that interacts with a
+          Within this project, I created a RESTful API for an application called "myFlix" that interacts with a
           database that stores data about different movies and users.
+          <br><br>
+          Technolgies used in this project include: Node.js, Express, Passport, MongoDB Atlas, Mongoose, and Postman.
+          See Github link for
+          more details.
         </p>
-        <a href="https://github.com/netti-w/myFlix" target="_blank">See project on GitHub</a>
+        <a href="https://github.com/netti-w/myFlix" target="_blank">View project on GitHub</a><br><br>
+        <a href="https://myflix-nw.herokuapp.com/documentation.html" target="_blank">See a live version</a>
       </div>
       <div class="project-list__item">
-        <h2>myFlix App (client-side - React.js)</h2>
+        <h2>myFlix App (client-side - React)</h2>
         <img src="img/screenshot_myflix_clientside.png" class="project-list__item__screenshot"
           alt="screenshot of the app">
         <p>
           Within this project, I used React to built the client-side for an application called "myFlix" based on
           its existing server-side code (REST API and database).
+          <br><br>
+          Technolgies used in this project include: React, Parcel, Axios and React Bootstrap. See Github link for
+          more details.
         </p>
-        <!-- <a href="https://github.com/netti-w/myFlix-client">See project on GitHub</a> -->
+        <a href="https://github.com/netti-w/myFlix-client">View project on GitHub</a>
       </div>
       <div class="project-list__item">
         <h2>Meet App (PWA)</h2>
@@ -85,8 +101,15 @@
           Within this project, I built a serverless, progressive web application (PWA) with React using a
           test-driven development (TDD) technique. The application uses the Google
           Calendar API to fetch upcoming events.
+          <br><br>
+          Technolgies used in this project include: HTML5, JavaScript, React, AWS Lambda, Lighthouse, and Recharts.
+          API. See
+          Github link for
+          more details.
         </p>
-        <a href="https://github.com/netti-w/meet" target="_blank">See project on GitHub</a>
+        <a href="https://github.com/netti-w/meet" target="_blank">View project on GitHub</a>
+        <!-- <a href="https://netti-w.github.io/meet/" target="_blank">See a live version</a> -->
+
       </div>
       <div class="project-list__item">
         <h2>Chat App (React Native)</h2>
@@ -95,11 +118,14 @@
           Within this project, I built a chat app for mobile devices using React Native. The app provides
           users with a chat interface and options to share images and their
           location.
+          <br><br>
+          Technolgies used in this project include: React, React-Native, Expo, Gifted Chat, Google Firebase, and Android
+          Studio. See Github link for more details.
         </p>
-        <a href="https://github.com/netti-w/chat_app" target="_blank">See project on GitHub</a>
+        <a href="https://github.com/netti-w/chat_app" target="_blank">View project on GitHub</a>
       </div>
       <div class="project-list__item">
-        <h2>myFlix App (client-side - Angular.js)</h2>
+        <h2>myFlix App (client-side - Angular)</h2>
         <a href="https://netti-w.github.io/myFlix-Angular-client/welcome" target="_blank" style="cursor: pointer">
           <img src="img/screenshot_myflix_angular_clientside.png" class="project-list__item__screenshot"
             alt="screenshot of the app">
@@ -108,8 +134,12 @@
           Within this project, I used Angular to rebuilt the client-side for an application called "myFlix" based on
           its existing server-side code (REST API and database), with supporting
           documentation.
+          <br><br>
+          Technolgies used in this project include: Angular, and Typescript. See Github link for more details.
         </p>
-        <a href="https://github.com/netti-w/myFlix-Angular-client" target="_blank">See project on GitHub</a>
+        <a href="https://github.com/netti-w/myFlix-Angular-client" target="_blank">View project on GitHub</a>
+        <br><br>
+        <a href="https://netti-w.github.io/myFlix-Angular-client/welcome" target="_blank">See a live version</a>
       </div>
     </div>
 
