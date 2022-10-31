@@ -42,25 +42,25 @@
 
   <!-- Needs refactoring: Simplify code to show icon with dropdown menu on mobile  -->
   <header class="nav">
-    <input type="checkbox" id="nav-check">
+    <input type="checkbox" id="nav-check" aria-label="Click to expand website menu options">
     <div class="nav-header">
       <div class="nav-title">
         <a href="index.html"><img class="nav-logo" src="img/logo_netti-worms_v1.png" alt="logo Netti Worms"
             class="page-header__logo"></a>
       </div>
     </div>
-    <div class="nav-btn">
+    <div class="nav-btn" href="index.html">
       <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span aria-disabled="true"></span>
+        <span aria-disabled="true"></span>
+        <span aria-disabled="true"></span>
       </label>
     </div>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About Me</a>
-      <a href="contact.html">Contact</a>
+      <a aria-label="Click to go back to the homepage" href="index.html">Home</a>
+      <a aria-label="Click to go to past projects Netti Wormss created" href="work.html">Work</a>
+      <a aria-label="Click to read about Netti Worms" href="about.html">About Me</a>
+      <a aria-label="Click to contact me via email or linkedin" href="contact.html">Contact</a>
     </div>
   </header>
   <main class="profile">
