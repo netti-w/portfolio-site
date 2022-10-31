@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Netti Worms</title>
-    <link rel="shortcut icon" href="./img/favicon_32x32.ico">
-    <link rel="stylesheet" type="text/css"
-    href=
-    "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&amp;family=Nunito:wght@500;700&amp;family=Roboto:wght@100;300;500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  <body>
-    <header class="page-header">
-      <a href="index.html"><img src="img/logo_netti-worms_v1.png" alt=
-      "logo Netti Worms" class="page-header__logo"></a>
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="tab" class="navigation-list__item">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="tab" class="navigation-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-         </li>
-          <li role="presentation">
-            <a href="contact.html" role="tab" class="navigation-list__item--active">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="contact">
-      <h1>Reach out to me</h1>
-      <p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Netti Worms</title>
+  <link rel="shortcut icon" href="./img/favicon_32x32.ico">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&amp;family=Nunito:wght@500;700&amp;family=Roboto:wght@100;300;500&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Header including the logo and the main navigation -->
+  <header class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img class="nav-logo" src="img/logo_netti-worms_v1.png" alt="logo Netti Worms"
+            class="page-header__logo"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <main class="contact">
+    <h1>Reach out to me</h1>
+    <!-- <p>
         Do you want to get in touch with me? You can
         either use the contact form, write an <a href=
         "mailto:jeanette.worms[at]googlemail.com" target=
         "_blank">email</a> or reach out via <a href=
         "#contact_channels">other channels</a>.
-      </p>
-      <h2>Contact form</h2>
+      </p> -->
+    <p>
+      Do you want to get in touch with me? I'm looking forward to receive your message.
+    </p>
+    <!-- <h2>Contact form</h2>
       <p>* Please fill in the required fields.</p>
       <form action="" method="post" id="contact_form" name="contact_form">
         <label class="standard-label" for="contact_fname">First name*:</label>
@@ -75,36 +84,37 @@
         <textarea maxlength="400" id="contact_message"
 				required=""></textarea><br>
         <br>
-        <button type="submit">Send message</button>
-        <!--<input type="submit" value="Send message">-->
-      </form>
-      <h2 id="contact_channels">More contact channels</h2>
-			<p>Email: <a href=
-      "mailto:jeanette.worms[at]googlemail.com" target=
-      "_blank">jeanette.worms[at]googlemail.com</a><br>
-      Linkedin: <a href="https://www.linkedin.com/in/jeanette-netti-worms-b1b51a11b/" target=
-      "_blank">Jeanette (Netti) Worms</a>
-      </p>
-    </main>
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <!-- Github -->
-        <a href="https://github.com/netti-w" target="_blank">
-          <img src="img/icons/github_icon.svg" alt="Github icon" class="social-media__item">
-        </a>
-        <!-- Linkedin -->
-        <a href="https://www.linkedin.com/in/jeanette-netti-worms-b1b51a11b/" target="_blank">
-          <img src="img/icons/linkedin_icon.svg" alt="Linkedin icon" class="social-media__item">
-        </a>
-        <!-- Twitter -->
-        <a href="https://twitter.com/" target="_blank">
-          <img src="img/icons/twitter_icon.svg" alt="Twitter icon" class="social-media__item">
-        </a>
-       </div>
-    </footer>
-    <!-- Check accesibility before deploying
+        <button type="submit">
+          Send message 
+          <input type="submit" value="Send message">
+        </button>
+      </form> -->
+    <h2 id="contact_channels">Channels</h2>
+    <p>Email: <a href="mailto:jeanette.worms[at]googlemail.com" target="_blank">jeanette.worms[at]googlemail.com</a><br>
+      Linkedin: <a href="https://www.linkedin.com/in/jeanette-netti-worms-b1b51a11b/" target="_blank">Jeanette (Netti)
+        Worms</a>
+    </p>
+  </main>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <!-- Github -->
+      <a href="https://github.com/netti-w" target="_blank">
+        <img src="img/icons/github_icon.svg" alt="Github icon" class="social-media__item">
+      </a>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/jeanette-netti-worms-b1b51a11b/" target="_blank">
+        <img src="img/icons/linkedin_icon.svg" alt="Linkedin icon" class="social-media__item">
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/" target="_blank">
+        <img src="img/icons/twitter_icon.svg" alt="Twitter icon" class="social-media__item">
+      </a>
+    </div>
+  </footer>
+  <!-- Check accesibility before deploying
     <script src="js/tota11y.min.js">
     </script> -->
-  </body>
+</body>
+
 </html>
