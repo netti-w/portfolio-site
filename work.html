@@ -8,11 +8,10 @@
   <link rel="shortcut icon" href="./img/favicon_32x32.ico">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&amp;family=Nunito:wght@500;700&amp;family=Roboto:wght@100;300;500&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&amp;family=Nunito:wght@500;700&amp;family=Roboto:wght@100;300;500&amp;family=Roboto:wght@100;300;500&amp;family=Poppins:wght@400;600&amp;family=Roboto+Mono:wght@300;400&amp;display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
@@ -36,16 +35,16 @@
     </div>
     <div class="nav-links">
       <a aria-label="Click to go back to the homepage" href="index.html">Home</a>
-      <a aria-label="Click to go to past projects Netti Wormss created" href="work.html">Work</a>
+      <a aria-label="Click to go to past projects Netti Worms created" href="work.html">Work</a>
       <a aria-label="Click to read about Netti Worms" href="about.html">About Me</a>
-      <a aria-label="Click to contact me via email or linkedin" href="contact.html">Contact</a>
+      <a aria-label="Click to contact me via email or on linkedin" href="contact.html">Contact</a>
     </div>
   </header>
   <!-- Main content -->
-  <section>
+  <main>
     <h1>Work</h1>
+    <p></p>
     <div class="project-list">
-      <!-- Grid items will live here -->
       <div class="project-list__item">
         <h2>Pokedex App (Javascript)</h2>
         <a href="https://netti-w.github.io/simple-js-app/" target="_blank" style="cursor: pointer">
@@ -54,13 +53,20 @@
         <p>
           Within this project, I built a small web application with HTML and JavaScript that loads data from an
           external API, enabling users to view details of an element item.
-          <br><br>
-          Technologies used in this project include: HTML, Polyfill, jQuery, Bootstrap and ESlint. See GitHub link for
-          more details.
         </p>
-        <a href="https://github.com/netti-w/simple-js-app" target="_blank">View project on GitHub</a><br><br>
-        <a href="https://netti-w.github.io/simple-js-app/" target="_blank">See a live
-          version</a>
+        <p>
+          Technologies used in this project include: HTML, Polyfill, jQuery, Bootstrap and ESlint.
+          Read further details on GitHub.
+        </p>
+        <button class="button__primary" style="margin-top: 5px; margin-bottom: 15px;">
+          <a href="https://github.com/netti-w/simple-js-app" class="button__primary" target="_blank">
+            Go to project on GitHub</a>
+        </button>
+        <br>
+        <button class="button__secondary">
+          <a href="https://netti-w.github.io/simple-js-app/" target="_blank" class="button__secondary">
+            Go to live version</a>
+        </button>
       </div>
       <div class="project-list__item">
         <h2>myFlix App (server-side)</h2>
@@ -71,28 +77,40 @@
         <p>
           Within this project, I created a RESTful API for an application called "myFlix" that interacts with a
           database that stores data about different movies and users.
-          <br><br>
-          Technologies used in this project include: Node.js, Express, Passport, MongoDB Atlas, Mongoose, and Postman
-          (for testing).
-          See GitHub link for
-          more details.
         </p>
-        <a href="https://github.com/netti-w/myFlix" target="_blank">View project on GitHub</a>
-        <br><br>
-        <a href="https://myflix-nw.herokuapp.com/documentation.html" target="_blank">See a live version</a>
+        <p>Technologies used
+          in this project include: Node.js, Express, Passport, MongoDB Atlas, Mongoose, and Postman
+          (for testing).
+          Read further details on GitHub.
+        </p>
+        <button class="button__primary" style="margin-top: 5px; margin-bottom: 15px;">
+          <a href="https://github.com/netti-w/myFlix" class="button__primary" target="_blank">
+            Go to project on GitHub</a>
+        </button>
+        <br>
+        <button class="button__secondary">
+          <a href="https://myflix-nw.herokuapp.com/documentation.html" target="_blank" class="button__secondary">Go to
+            live
+            version</a>
+        </button>
       </div>
       <div class="project-list__item">
         <h2>myFlix App (client-side - React)</h2>
-        <img src="img/screenshot_myflix_clientside.png" class="project-list__item__screenshot"
+        <img src="img/screenshot_myflix_clientside.png" class="project-list__item__screenshot_inactive"
           alt="screenshot of the app">
         <p>
           Within this project, I used React to built the client-side for an application called "myFlix" based on
           its existing server-side code (REST API and database).
-          <br><br>
-          Technologies used in this project include: React, Parcel, Axios and React Bootstrap. See GitHub link for
-          more details.
         </p>
-        <a href="https://github.com/netti-w/myFlix-client" target="_blank">View project on GitHub</a>
+        <p>
+          Technologies used in this project include: React, Parcel, Axios and
+          React Bootstrap. Read further details on GitHub.
+        </p>
+        <button class="button__primary" style="margin-top: 5px; margin-bottom: 15px;">
+          <a href="https://github.com/netti-w/myFlix-client" target="_blank" class="button__primary">
+            Go to project on
+            GitHub</a>
+        </button>
       </div>
       <div class="project-list__item">
         <h2>Meet App (PWA)</h2>
@@ -103,28 +121,40 @@
           Within this project, I built a serverless, progressive web application (PWA) with React using a
           test-driven development (TDD) technique. The application uses the Google
           Calendar API to fetch upcoming events.
-          <br><br>
-          Technologies used in this project include: HTML5, React, AWS Lambda, Jest Cucumber, Lighthouse, and
-          Recharts. See GitHub link for more details.
         </p>
-        <a href="https://github.com/netti-w/meet" target="_blank">View project on GitHub</a>
-        <br><br>
-        <a href="https://netti-w.github.io/meet/" target="_blank">See a live version (restricted)</a>
-
+        <p>
+          Technologies used in this project include: HTML5, React, AWS Lambda, Jest Cucumber, Lighthouse, and
+          Recharts. Read further details on GitHub.
+        </p>
+        <button class="button__primary" style="margin-top: 5px; margin-bottom: 15px;">
+          <a href="https://github.com/netti-w/meet" class="button__primary" target="_blank">
+            Go to project on GitHub</a>
+        </button>
+        <br>
+        <button class="button__secondary">
+          <a href="https://netti-w.github.io/meet/" target="_blank" class="button__secondary">
+            Go to live version (restricted)</a>
+        </button>
       </div>
       <div class="project-list__item">
         <h2>Chat App (React Native)</h2>
-        <img src="img/screenshot_chat_app.png" class="project-list__item__screenshot" alt="screenshot of the app">
+        <img src="img/screenshot_chat_app.png" class="project-list__item__screenshot_inactive"
+          alt="screenshot of the app">
         <p>
           Within this project, I built a chat app for mobile devices using React Native. The app provides
           users with a chat interface and options to share images and their
-          location and ve.
-          <br><br>
+          location.
+        </p>
+        <p>
           Technologies used in this project include: React, React-Native, Expo, Gifted Chat, Google Firebase, and
           Android
-          Studio. See GitHub link for more details.
+          Studio. Read further details on GitHub.
         </p>
-        <a href="https://github.com/netti-w/chat_app" target="_blank">View project on GitHub</a>
+        <button class="button__primary" style="margin-top: 5px; margin-bottom: 15px;">
+          <a href="https://github.com/netti-w/chat_app" target="_blank" class="button__primary">
+            Go to project on
+            GitHub</a>
+        </button>
       </div>
       <div class="project-list__item">
         <h2>myFlix App (client-side - Angular)</h2>
@@ -136,17 +166,24 @@
           Within this project, I used Angular to rebuilt the client-side for an application called "myFlix" based on
           its existing server-side code (REST API and database), with supporting
           documentation.
-          <br><br>
-          Technologies used in this project include: Angular, Typescript, Angular Material, and TypeDoc. See GitHub link
-          for more details.
         </p>
-        <a href="https://github.com/netti-w/myFlix-Angular-client" target="_blank">View project on GitHub</a>
-        <br><br>
-        <a href="https://netti-w.github.io/myFlix-Angular-client/welcome" target="_blank">See a live version</a>
+        <p>
+          Technologies used in this project include: Angular, Typescript, Angular Material, and TypeDoc.
+          Read further details on GitHub.
+        </p>
+        <button class="button__primary" style="margin-top: 5px; margin-bottom: 15px;">
+          <a href="https://github.com/netti-w/myFlix-Angular-client" class="button__primary" target="_blank">
+            Go to project on GitHub</a>
+        </button>
+        <br>
+        <button class="button__secondary" a href="https://netti-w.github.io/myFlix-Angular-client/welcome"
+          target="_blank">
+          <a href="https://netti-w.github.io/myFlix-Angular-client/welcome" target="_blank" class="button__secondary">
+            Go to live version</a>
+        </button>
       </div>
     </div>
-
-  </section>
+  </main>
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
@@ -158,15 +195,11 @@
       <a href="https://www.linkedin.com/in/jeanette-netti-worms-b1b51a11b/" target="_blank">
         <img src="img/icons/linkedin_icon.svg" alt="Linkedin icon" class="social-media__item">
       </a>
-      <!-- Twitter -->
-      <a href="https://twitter.com/" target="_blank">
-        <img src="img/icons/twitter_icon.svg" alt="Twitter icon" class="social-media__item">
-      </a>
     </div>
   </footer>
-  <!-- Check accesibility before deploying
-    <script src="js/tota11y.min.js">
-    </script> -->
+  <!-- Check accesibility before deploying -->
+  <script src="js/tota11y.min.js">
+  </script>
 </body>
 
 </html>
