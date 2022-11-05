@@ -371,7 +371,7 @@ button:hover,
   display: flex;
   flex-flow: column wrap;
   width: 600px;
-  margin-left: 15px;
+  margin: 0 15px 0 15px;
 }
 
 .skill-levels__item {
@@ -491,7 +491,7 @@ button:hover,
     overflow-y: auto;
   }
 
-  /* home page changes - profile pic centered  */
+  /* homepage changes - profile pic centered  */
   .profile__portrait {
     padding: 20px;
     width: 100%;
@@ -503,14 +503,15 @@ button:hover,
     grid-template-columns: 1fr;
   }
 
+  /* about page changes */
   .skill-levels {
     width: 100%;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 0px;
   }
 
   .skill-levels__item-label {
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
