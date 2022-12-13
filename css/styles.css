@@ -14,6 +14,7 @@ secondary cta (dark blue) border-color: #0d1950
 secondary cta text (dark blue) color: #0d1950;
  */
 
+/* General styling */
 :root {
   /* colours */
   --dark-blue: #0d1950;
@@ -21,10 +22,10 @@ secondary cta text (dark blue) color: #0d1950;
   --highlight-pink: #ea0072;
 
   /* font styles */
-  --h1-size: 45px;
-  --h2-size: 20px;
-  --h3-size: 18px;
-  --body-regular: 16px;
+  --h1-size: 50px;
+  --h2-size: 35px;
+  --h3-size: 20px;
+  --body-regular: 20px;
   --body-small: 14px;
   --headline-bold: 600;
   --font-bold: 500;
@@ -49,6 +50,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Poppins', sans-serif;
   font-size: var(--h2-size);
   font-weight: var(--font-bold);
   line-height: 1;
@@ -57,6 +59,7 @@ h2 {
 }
 
 h3 {
+  font-family: 'Poppins', sans-serif;
   font-size: var(--h3-size);
   font-weight: var(--font-regular);
   color: var(--dark-blue);
@@ -146,6 +149,7 @@ button:hover,
   box-sizing: border-box;
 }
 
+/* ----------- Styling navbar  ------------*/
 .nav {
   height: 100%;
   width: 100%;
@@ -202,6 +206,32 @@ button:hover,
   margin-top: 10px;
 }
 
+/* --------- Styling footer  ------------*/
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media__item {
+  height: 40px;
+}
+
+.social-media__item:hover,
+.social-media__item:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+/* ---------- Styling homepage ---------- */
 .title {
   color: var(--highlight-pink);
   font-weight: var(--headline-bold);
@@ -232,8 +262,24 @@ button:hover,
   border-radius: 50%;
 }
 
-.about {
+/*  ---------- New try profile page ----------- */
+.profile_new {
   max-width: 700px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+
+}
+
+/* .profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+} */
+
+.about {
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -246,29 +292,7 @@ button:hover,
   padding: 20px;
 }
 
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.social-media a {
-  text-decoration: none;
-}
-
-.social-media__item {
-  height: 40px;
-}
-
-.social-media__item:hover,
-.social-media__item:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
+/* ---------- Styling projects/work page ---------- */
 
 /* start grid fallback */
 .project-list__item {
@@ -367,6 +391,132 @@ button:hover,
   }
 }
 
+/* ----------  Case study layout  ----------  */
+.case-study {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* start: slide show images */
+.accordian {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.slide_image {
+  max-width: 500px;
+  /* border-radius: 6px; */
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.54);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.54);
+}
+
+.accordian li {
+  position: relative;
+  display: block;
+  width: 140px;
+  float: left;
+  border-left: 1px solid #888;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.accordian ul:hover li {
+  width: 100px;
+}
+
+.accordian ul li:hover {
+  width: 500px;
+}
+
+.accordian li img {
+  display: block;
+}
+
+.image_title {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 500px;
+}
+
+.image_title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* end: slide show images */
+
+*/ .section {
+  width: 100%;
+  max-width: 1000px;
+  padding: var(--spacing);
+  /* scroll-margin-top: 80px; */
+  flex: 1 1;
+}
+
+.case-study_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  min-height: auto;
+}
+
+.case-study_section .img-container {
+  padding: 30px;
+  max-width: 450px;
+}
+
+.case-study_section .txt-container {
+  max-width: 50%;
+}
+
+.case-study_section img {
+  width: 100%;
+  border-radius: 6px;
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.54);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.54);
+}
+
+@media all and (max-width: 650px) {
+
+  .case-study_section_img_txt {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: auto;
+    min-height: auto;
+  }
+
+  .case-study_section_txt_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    min-height: auto;
+  }
+
+  .case-study_section .img-container {
+    max-width: 100%;
+  }
+
+  .case-study_section .txt-container {
+    max-width: 100%;
+    margin: none;
+  }
+
+}
+
+/* ----------  About me layout  ----------  */
 .skill-levels {
   display: flex;
   flex-flow: column wrap;

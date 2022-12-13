@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netti's portfolio website</title>
+  <link rel="shortcut icon" href="./img/favicon-nw.ico">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&amp;family=Nunito:wght@500;700&amp;family=Roboto:wght@100;300;500&amp;family=Roboto:wght@100;300;500&amp;family=Poppins:wght@400;600&amp;family=Roboto+Mono:wght@300;400&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <header class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img class="nav-logo" src="img/logo_netti-worms_v1.png" alt="logo Netti Worms"
+            class="page-header__logo"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <main class="case-study">
+    <h1 style="text-align: center;">Movie App: Full-Stack Project</h1>
+    <div class="accordian">
+      <ul>
+        <li>
+          <div class="image_title">
+            <a href="#">Movies page</a>
+          </div>
+          <a href="#">
+            <img class="slide_image" src="img/case_study_screenshots/myFlix_movie_list.png">
+          </a>
+        </li>
+        <li>
+          <div class="image_title">
+            <a href="#">Movie detail page</a>
+          </div>
+          <a href="#">
+            <img class="slide_image" src="img/case_study_screenshots/myFlix_movie_details.png">
+          </a>
+        </li>
+        <li>
+          <div class="image_title">
+            <a href="#">Login page</a>
+          </div>
+          <a href="#">
+            <img class="slide_image" src="img/case_study_screenshots/myFlix_login.png">
+          </a>
+        </li>
+        <li>
+          <div class="image_title">
+            <a href="#">Profile page</a>
+          </div>
+          <img class="slide_image" src="img/case_study_screenshots/myFlix_profile_view.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2 style="text-align: center;">Overview</h2>
+      <p>This project is a movie application called “myFlix”, providing users with access to information about
+        different
+        movies, directors, and genres, where users can sign up, update their personal information, and create a list
+        of
+        their favourite movies.</p>
+      <div class="case-study_section case-study_section_txt_img case-study_section_into">
+        <div class="txt-container" style="padding-left:30px; padding-right: 30px;">
+          <h3>Purpose & Context</h3>
+          <p>This is a personal project I built as a part of my Full-Stack Web Development course at CareerFoundry and
+            meant
+            to
+            acquire skills in both the front-end and back-end of an application, creating databases and developing with
+            React.
+          </p>
+          <h3 style="margin:0%">Objective</h3>
+          <p>Provide users with information about a pool of films, and an ability to save their favourites, in a
+            seamless
+            and
+            bug-free app.</p>
+          <h3 style="margin:0%">Duration</h3>
+          <p>12 weeks in total (backend: 3 weeks, frontend: 9 weeks)</p>
+          <h3 style="margin:0%">Credits</h3>
+          <p>Tutor: Blaise Bakundukize
+            <br>
+            Mentor: Nizar Triki
+          </p>
+        </div>
+        <div class="txt-container" style="padding-left:30px; padding-right: 30px;">
+          <h3>Tech Stack & Tools</h3>
+          <div class="case-study_stack">
+            <p><span style="font-weight: bold;">Backend:</span><br>Express, Morgan, bodyParser, mongoose, CORS,
+              Passport, bcrypt, MongoDB, Postman, Heroku,
+              JSDoc
+            </p>
+            <div class="case-study_stack_item">
+              <a href="https://github.com/netti-w/myFlix" target="_blank">
+                <button class="button__secondary" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px">
+                  Go to project on GitHub
+                </button>
+              </a>
+              <a href="https://myflix-nw.herokuapp.com/documentation.html" target="_blank">
+                <button class="button__secondary" style="margin-top: 5px; margin-bottom: 10px;">
+                  Go to API documentation
+                </button>
+              </a>
+            </div>
+            <p><span style="font-weight: bold;">Frontend:</span><br>JavaScript, React, React Redux, React Bootstrap,
+              Parcel, Axios</p>
+            <div class="case-study_stack_item">
+              <a href="https://github.com/netti-w/myFlix-client" target="_blank">
+                <button class="button__secondary" style="margin-top: 5px; margin-bottom: 5px;">
+                  Go to project on GitHub
+                </button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="section">
+        <h2 style="text-align: center;">Approach</h2>
+        <h3 style="text-align: center;">Developing the Backend part</h3>
+        <div class="case-study_section case-study_section_txt_img">
+          <div class="txt-container" style="margin-top: 30px;">
+            <span style=" font-weight: bold;">Creating a RESTful API</span>
+            <br>
+            <p>For the back-end part I listed out all the app's functionalities that would need to interact with the
+              movies'
+              and
+              user database,
+              and
+              then I translated these functionalities into HTML endpoints to build out the structure of the Express API.
+              This
+              preparation step kept the initial coding efficient, helping me know exactly where to start with my
+              project.
+            </p>
+            <p>
+              I wrote a non-relational database in MongoDB and updated my API so information from the database can be
+              retrieved and updated using HTTP methods like GET or POST.
+            </p>
+          </div>
+          <div class="img-container">
+            <img src="img/screenshot_api_endpoints.png">
+          </div>
+        </div>
+        <div class="case-study_section case-study_section_img_txt">
+          <div class="img-container">
+            <img class="case-study_section_img" src="img/postman_jwt_auth.png">
+          </div>
+          <div class="txt-container" style="margin-top: 30px;">
+            <span style="font-weight: bold;">User authentication</span>
+            <br>
+            <p>An important part of this step was adding layers of
+              security to protect the data, like JWT authentication which requires users to sign in to retrieve and
+              write
+              data, and password hashing that prevents anyone (even the owner of the database) from viewing a user's
+              password.</p>
+            <p>
+              All testing on the service-side was done in Postman and accompanied by a documentation, listing the API
+              endpoints
+              with it's required data input and responses.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 style="text-align: center;">Creating the Frontend part</h3>
+        <div class="case-study_section case-study_section_txt_img">
+          <div class="txt-container" style="margin-top: 30px;">
+            <span style="font-weight: bold;">Introduction to React</span>
+            <br>
+            <p>After completing the API I started to build the front-end part of the “myFlix” app, allowing users to
+              make
+              requests
+              and receiving responses from the server-side.
+            </p>
+            <p>
+              It is a single-page app with several views, created with
+              React
+              and
+              Redux, which meant I needed to familiarise myself with React's component structure and components' data
+              storage
+              to
+              display the right information based on the user interaction, e.g. a user who is not yet registered or
+              logged
+              out,
+              should not see the a list of movies or profile information.</p>
+          </div>
+          <div class="img-container">
+            <img src="img/case_study_screenshots/react_case_study_1.png">
+          </div>
+        </div>
+        <div class="case-study_section case-study_section_img_txt">
+          <div class="img-container">
+            <img src="img/case_study_screenshots/myFlix_profile_view.png">
+          </div>
+          <div class="txt-container" style="margin-top: 30px;">
+            <span style="font-weight: bold;">Building the interface</span>
+            <br>
+            <p>I began building the movies' view, allowing users to see a list of all movies and detail information of
+              movie, director and genre, followed by the views around the user and adding the functionality to update or
+              delete a
+              user's profile.</p>
+            <p>Building the app's interface and views was sped up my using React-Bootstrap, a UI library which also
+              ensured design consistency, but was customised during developing the views.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 style="text-align: center;">Retrospective</h2>
+        <div class="case-study_section case-study_section_txt_img">
+          <div class="txt-container" style="padding-left:30px; padding-right: 30px;">
+            <h3>Challenges</h3>
+            <p>The movie app was the most challenging project within the Full-Stack Web Developement course. While I
+              thought the server-side part will be the most difficult one, I underestimated the time investment and
+              development scope of the client side, especially building in all functionalities.
+            </p>
+            <p>
+              During the build process of the client-side I spent a lot of time in customising the React-Bootstrap
+              theme to give my movie app an individual look, which meant less time spent on building in the user
+              functionality. React was a complete new concept to me, understanding the data flows and how the components
+              work in conjunction is something I did underestimate and not fully comprehend first, which led to a lot of
+              errors and bugs in building in the user's functions and components (e.g user profile was not visible
+              anymore).
+            </p>
+            <p>
+              Realising that I need to fully grasp React in order to finish the app bug-free, made me stop working on
+              the app and properly investing the time for reading it's official documentation, watching YouTube
+              tutorials and additionally reaching out to my tutor and mentor for help, in order to properly continue the
+              build process. Thankfully with my mentor's advice on how to best proceed and my tutor's help, I could fix
+              the bugs and implement all the functionalities properly.
+            </p>
+          </div>
+          <div class="txt-container" style="padding-left:30px; padding-right: 30px;">
+            <h3>Conclusion & Key takeaways</h3>
+            <p>The movie app was only the second full web app I've developed within the Full-Stack web-developement
+              course. Since developing the app, I have continued to learn more about developing practices, especially
+              the test driven development approach. This helped to primarily focus on building the functionalities first
+              and preventing errors in the development process of the following project, an app that also used React for
+              the client-side.</p>
+            <p><span style="font-weight: bold;">Main takeaways for future projects are:</span></p>
+            <ul>
+              <li>Focus on understanding the concept (here: React and Redux) first</li>
+              <li>Map out the most essential user information (states) and information flow (state-flow) towards the
+                components</li>
+              <li>Test every single unit features/function in itself within the concept</li>
+              <li>Apply design after error free functionalities are implemented</li>
+            </ul>
+            <a href="work.html">
+              <button class="button__primary"
+                style="margin-top: 5px; margin-bottom: 5px; margin-left: 20px; text-align: center;">
+                Go back to all projects
+              </button>
+            </a>
+          </div>
+        </div>
+  </main>
+  <footer class=" page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <!-- Github -->
+      <a href="https://github.com/netti-w" target="_blank">
+        <img src="img/icons/github_icon.svg" alt="Github icon" class="social-media__item">
+      </a>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/jeanette-netti-worms-b1b51a11b/" target="_blank">
+        <img src="img/icons/linkedin_icon.svg" alt="Linkedin icon" class="social-media__item">
+      </a>
+    </div>
+  </footer>
+</body>
+<!-- Check accesibility before deploying -->
+<!-- <script src="js/tota11y.min.js">
+</script> -->
+
+</html>
