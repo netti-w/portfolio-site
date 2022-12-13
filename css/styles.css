@@ -23,9 +23,9 @@ secondary cta text (dark blue) color: #0d1950;
 
   /* font styles */
   --h1-size: 50px;
-  --h2-size: 35px;
+  --h2-size: 30px;
   --h3-size: 20px;
-  --body-regular: 20px;
+  --body-regular: 18px;
   --body-small: 14px;
   --headline-bold: 600;
   --font-bold: 500;
@@ -35,7 +35,7 @@ secondary cta text (dark blue) color: #0d1950;
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: var(--font-regular);
-  font-size: var(--body-copy-regular);
+  font-size: var(--body-regular);
   line-height: 1.5;
   color: black;
   padding: 20px;
@@ -52,7 +52,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: var(--h2-size);
-  font-weight: var(--font-bold);
+  font-weight: 600;
   line-height: 1;
   color: var(--dark-blue);
   padding-top: 10px;
@@ -232,51 +232,209 @@ button:hover,
 }
 
 /* ---------- Styling homepage ---------- */
+.profile {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+}
+
+.profile__portrait {
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
 .title {
   color: var(--highlight-pink);
   font-weight: var(--headline-bold);
   font-size: 45px;
+  text-align: center;
   margin: 0px;
   padding: 0px;
 }
 
 .subtitle {
   font-family: 'Poppins';
-  text-transform: uppercase;
+  font-size: 25px;
   font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
   color: var(--dark-blue);
   margin: 20px 0 5px 0;
   padding: 0px;
 }
 
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.profile__portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
-/*  ---------- New try profile page ----------- */
-.profile_new {
-  max-width: 700px;
+.contact_button {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
-
+  justify-content: space-between;
 }
 
-/* .profile__portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
-} */
+/*  --------- Title animation ----------- */
+
+@keyframes cursor {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #0d1950;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+
+  90%,
+  to {
+    width: 0;
+  }
+}
+
+@keyframes slide {
+  33.3333333333% {
+    font-size: 25px;
+    /* letter-spacing: 3px; */
+  }
+
+  to {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+}
+
+.typing-slider {
+  font-family: 'Poppins';
+  text-align: center;
+  white-space: nowrap;
+  color: #0d1950;
+}
+
+.typing-slider p {
+  position: relative;
+  display: inline;
+  font-size: 0;
+  letter-spacing: 0;
+  animation: slide 9s step-start infinite;
+}
+
+.typing-slider p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 3px solid #0d1950;
+  background-color: #fff;
+  animation: typing 3s infinite, cursor 1s infinite;
+}
+
+.typing-slider p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-slider p:nth-child(1)::after {
+  animation-delay: 0s;
+  animation-timing-function: steps(16), step-end;
+}
+
+.typing-slider p:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.typing-slider p:nth-child(2)::after {
+  animation-delay: 3s;
+  animation-timing-function: steps(23), step-end;
+}
+
+.typing-slider p:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.typing-slider p:nth-child(3)::after {
+  animation-delay: 6s;
+  animation-timing-function: steps(12), step-end;
+}
+
+@media all and (min-width: 500px) and (max-width: 800px) {
+  .subtitle {
+    margin: 20px 0 5px 0;
+    font-size: 18px;
+    /* padding-bottom: 20px; */
+  }
+
+  @keyframes slide {
+    33.3333333333% {
+      font-size: 18px;
+      /* letter-spacing: 3px; */
+    }
+
+    to {
+      font-size: 0;
+      letter-spacing: 0;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .profile_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .profile__portrait {
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .subtitle {
+    margin: 20px 0 5px 0;
+    font-size: 18px;
+    /* padding-bottom: 20px; */
+  }
+
+  .contact_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @keyframes slide {
+    33.3333333333% {
+      font-size: 18px;
+      /* letter-spacing: 3px; */
+    }
+
+    to {
+      font-size: 0;
+      letter-spacing: 0;
+    }
+  }
+}
+
+/*  ---------- Styling About page ----------- */
 
 .about {
   max-width: 900px;
@@ -292,7 +450,27 @@ button:hover,
   padding: 20px;
 }
 
+.about_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 650px) {
+  .about_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* ---------- Styling projects/work page ---------- */
+
+.project_title {
+  font-size: 20px;
+}
 
 /* start grid fallback */
 .project-list__item {
@@ -488,6 +666,9 @@ button:hover,
 }
 
 @media all and (max-width: 650px) {
+  .accordian {
+    display: none;
+  }
 
   .case-study_section_img_txt {
     display: flex;
@@ -583,6 +764,18 @@ button:hover,
 
   h2 {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 16px;
   }
 
   /**
