@@ -471,7 +471,7 @@ button:hover,
 #contact_form input,
 textarea {
   background-color: #F4E5DF;
-  border: #fff solid 1px;
+  /* border: #cbbfba solid 1px; */
   border-radius: 4px;
   padding: 15px 20px;
   min-height: 25px;
@@ -923,8 +923,4 @@ textarea {
     grid-row: auto / auto;
   }
 
-}
-
-#contact_form {
-  padding-left: 10px;
 }
