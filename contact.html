@@ -41,50 +41,36 @@
   </header>
   <main class="contact">
     <h1>Reach out to me</h1>
-    <!-- <p>
-        Do you want to get in touch with me? You can
-        either use the contact form, write an <a href=
-        "mailto:jeanette.worms[at]googlemail.com" target=
-        "_blank">email</a> or reach out via <a href=
-        "#contact_channels">other channels</a>.
-      </p> -->
     <p>
-      Do you want to get in touch with me? I'm looking forward to receive your message.
+      Do you want to get in touch with me? You can
+      either use the contact form, write an <a href="mailto:jeanette.worms[at]googlemail.com" target="_blank">email</a>
+      or reach out via <a href="#contact_channels">other channels</a>.
     </p>
-    <!-- <h2>Contact form</h2>
+    <h2>Contact form</h2>
     <p>* Please fill in the required fields.</p>
-    <form action="" method="post" id="contact_form" name="contact_form">
-      <label class="standard-label" for="contact_fname">First name*:</label>
+    <form action="https://getform.io/f/c63b42f4-d79f-43f8-bb17-57fc360bf485" method="POST" id="contact_form"
+      name="contact_form">
+      <label class="standard-label" for="contact_name">Your name*</label>
       <br>
-      <input type="text" id="contact_fname" required=""><br>
+      <input type="text" id="contact_lname" name="name" required=""><br>
       <br>
-      <label class="standard-label" for="contact_lname">Last name*:</label>
+      <label class="standard-label" for="contact_email">Your email*</label>
       <br>
-      <input type="text" id="contact_lname" required=""><br>
+      <input type="email" id="contact_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email"
+        required=""><br>
       <br>
-      <label class="standard-label" for="contact_email">Email*:</label>
+      <label class="standard-label" for="contact_subject">Subject*</label>
       <br>
-      <input type="email" id="contact_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required=""><br>
+      <input type="text" id="contact_subject" maxlength="100" name="subject" required=""><br>
       <br>
-      <label class="standard-label" for="contact_tel">Telephone:</label>
+      <label class="standard-label" for="contact_message">Message*</label><br>
+      <textarea maxlength="400" id="contact_message" name="message" required=""></textarea><br>
       <br>
-      <input type="tel" id="contact_tel"><br>
-      <br>
-      <label class="standard-label" for="contact_subject">Subject* (max. 100
-        characters):</label>
-      <br>
-      <input type="text" id="contact_subject" maxlength="100" required=""><br>
-      <br>
-      <label class="standard-label" for="contact_message">Message* (max. 400
-        characters):</label><br>
-      <textarea maxlength="400" id="contact_message" required=""></textarea><br>
-      <br>
-      <button type="submit">
+      <button type="submit" class="button__primary" id="contact_button">
         Send message
-        <input type="submit" value="Send message">
       </button>
-    </form> -->
-    <h2 id="contact_channels">Channels</h2>
+    </form>
+    <h2 id="contact_channels">Other channels</h2>
     <p>Email: <a href="mailto:jeanette.worms[at]googlemail.com" target="_blank">jeanette.worms[at]googlemail.com</a><br>
       Linkedin: <a href="https://www.linkedin.com/in/netti-worms/" target="_blank">Netti (Jeanette)
         Worms</a>

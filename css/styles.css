@@ -442,14 +442,6 @@ button:hover,
   padding: 20px;
 }
 
-.contact {
-  display: flex;
-  max-width: 700px;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .about_button {
   display: flex;
   flex-direction: row;
@@ -465,6 +457,61 @@ button:hover,
     align-items: center;
   }
 }
+
+/* ---------- Styling contact page ---------- */
+
+.contact {
+  display: flex;
+  max-width: 700px;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#contact_form input,
+textarea {
+  background-color: #F4E5DF;
+  border: #fff solid 1px;
+  border-radius: 4px;
+  padding: 15px 20px;
+  min-height: 25px;
+  width: 600px;
+  font-size: 16px;
+  font-weight: var(--font-regular);
+}
+
+#contact_form label {
+  font-weight: var(--font-bold);
+  font-size: 16px;
+  padding: 10px;
+}
+
+#contact_message {
+  min-height: 150px;
+  max-width: 600px;
+}
+
+#contact_button {
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 650px) {
+
+  #contact_form input,
+  textarea {
+    max-width: 100%;
+  }
+
+  #contact_button {
+    text-align: center;
+  }
+
+  #contact_message {
+    max-width: 100%;
+  }
+
+}
+
 
 /* ---------- Styling projects/work page ---------- */
 
